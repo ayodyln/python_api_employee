@@ -6,7 +6,6 @@ app = FastAPI()
 
 employee_list = []
 
-
 @app.get("/")
 def read_root():
     return {"Hello": "World"}
