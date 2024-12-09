@@ -4,7 +4,15 @@ from classes.backend import Backend
 
 app = FastAPI()
 
-employee_list = []
+employee_list = [
+    Frontend(
+        id=0, 
+        name="John Doe", 
+        salary=2000, 
+        skill="frontend",
+        framework="Svelte"
+    )
+]
 
 @app.get("/")
 def read_root():
