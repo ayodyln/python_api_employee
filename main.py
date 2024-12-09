@@ -3,6 +3,8 @@ from classes.frontend import Frontend
 from classes.backend import Backend
 from classes.salary import Salary
 
+# Create an instance of FastAPI
+
 app = FastAPI()
 
 employee_list = [
