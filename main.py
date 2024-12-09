@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from classes.frontend import Frontend
 from classes.backend import Backend
+from classes.salary import Salary
 
 app = FastAPI()
 
@@ -8,7 +9,7 @@ employee_list = [
     Frontend(
         id=0, 
         name="John Doe", 
-        salary=2000, 
+        salary=Salary(salary=1000, required_hours=8),
         skill="frontend",
         framework="Svelte"
     )
